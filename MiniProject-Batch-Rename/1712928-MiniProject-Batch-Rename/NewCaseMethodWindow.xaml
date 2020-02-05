@@ -1,0 +1,25 @@
+﻿<Window x:Class="_1712928_MiniProject_Batch_Rename.NewCaseMethodWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1712928_MiniProject_Batch_Rename"
+        mc:Ignorable="d"
+        Title="NewCase" Height="200" Width="400" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Orientation="Vertical" Height="169" VerticalAlignment="Top">
+            <StackPanel>
+                <TextBlock Text="New Case" Margin="10,10,0,0" Height="30" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                <RadioButton x:Name="UpperCaseAllLetters" GroupName="NewCaseRadioButton" Content="Upper Case All Letters" FontSize="20" />
+                <RadioButton x:Name="LowerCaseAllLetters" GroupName="NewCaseRadioButton" Content="Lower Case All Letters" FontSize="20" />
+                <RadioButton x:Name="UpperCaseFirstLetter" IsChecked="True" GroupName="NewCaseRadioButton" Content="Upper Case First Letter" FontSize="20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="20,10,0,0">
+                <Button x:Name="NewCaseMethodOKButton" IsDefault="True" Content="OK" Width="70" Margin="80,0,50,0" Click="NewCaseMethodOKButton_Click"/>
+                <Button x:Name="NewCaseMethodCancelButton" Content="Cancel" Width="71" Click="NewCaseMethodCancelButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

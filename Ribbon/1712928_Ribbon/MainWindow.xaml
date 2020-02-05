@@ -1,0 +1,795 @@
+﻿<Fluent:RibbonWindow x:Class="_1712928_Ribbon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Fluent="urn:fluent-ribbon"
+        xmlns:local="clr-namespace:_1712928_Ribbon"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1058.5">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Fluent:Ribbon Grid.Row="0">
+            <!--Backstage-->
+            <Fluent:Ribbon.Menu>
+                <Fluent:Backstage >
+                    <Fluent:BackstageTabControl >
+                        <Fluent:Button  Header="New" SizeDefinition="middle">
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/new.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/new.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button  Header="Open" SizeDefinition="middle">
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/open.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/open.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="Save" SizeDefinition="middle">
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/save.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/save.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="Save As" SizeDefinition="middle">
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/saveas.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/saveas.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                    </Fluent:BackstageTabControl>
+                </Fluent:Backstage>
+            </Fluent:Ribbon.Menu>
+
+            <!--Tabs-->
+            <Fluent:RibbonTabItem Header="Home">
+                <Fluent:RibbonGroupBox Header="Clipboard">
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:DropDownButton Header="Paste" >
+                            <Fluent:DropDownButton.Icon>
+                                <Image Source="/Icons/paste.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:DropDownButton.Icon>
+                            <Fluent:DropDownButton.LargeIcon>
+                                <Image Source="/Icons/paste.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:DropDownButton.LargeIcon>
+                            <StackPanel Orientation="Vertical">
+                                <Fluent:Button Height="20" Header="Paste" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/paste.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/Paste.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" Header="Paste from" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/upload.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/upload.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                            </StackPanel>
+                        </Fluent:DropDownButton>
+                        <StackPanel Orientation="Vertical">
+                            <Fluent:Button Height="20" Header="Cut" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/scissors.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/scissors.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" Header="Copy" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/document.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/document.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Image" Width="116">
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:DropDownButton Header="Select" >
+                            <Fluent:DropDownButton.Icon>
+                                <Image Source="/Icons/rectangle-of-cutted-line-geometrical-shape.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:DropDownButton.Icon>
+                            <Fluent:DropDownButton.LargeIcon>
+                                <Image Source="/Icons/rectangle-of-cutted-line-geometrical-shape.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:DropDownButton.LargeIcon>
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="Selection Shapes"/>
+                                <Fluent:Button Height="20" Header="Rectangular selection" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/rectangle-of-cutted-line-geometrical-shape.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/rectangle-of-cutted-line-geometrical-shape.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" Header="Free-from selection" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/cutting-heart-of-broken-line-with-small-scissors.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/cutting-heart-of-broken-line-with-small-scissors.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <TextBlock Text="Selection Options"/>
+                                <Fluent:Button Height="20" Header="Select all" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/cut.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/cut.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" Header="Invert selection" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/crop.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/crop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" Header="Delete" SizeDefinition="middle">
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/clear.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/clear.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" Header="Transparent selection" SizeDefinition="middle">
+                                </Fluent:Button>
+                            </StackPanel>
+                        </Fluent:DropDownButton>
+                        <StackPanel Orientation="Vertical" Width="69">
+                            <Fluent:Button Height="20" Header="Crop" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/crop.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/crop.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" Header="Resize" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/resize.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/resize.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:DropDownButton Header="Rotate" SizeDefinition="middle">
+                                <Fluent:DropDownButton.Icon>
+                                    <Image Source="/Icons/rr.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:DropDownButton.Icon>
+                                <Fluent:DropDownButton.LargeIcon>
+                                    <Image Source="/Icons/rr.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:DropDownButton.LargeIcon>
+                                <StackPanel Orientation="Vertical">
+                                    <Fluent:Button Height="20" Header="Rotate right 90" SizeDefinition="middle">
+                                        <Fluent:Button.Icon>
+                                            <Image Source="Icons/rr.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </Fluent:Button.Icon>
+                                        <Fluent:Button.LargeIcon>
+                                            <Image Source="Icons/rr.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                        </Fluent:Button.LargeIcon>
+                                    </Fluent:Button>
+                                    <Fluent:Button Height="20" Header="Rotate left 90" SizeDefinition="middle">
+                                        <Fluent:Button.Icon>
+                                            <Image Source="Icons/rl.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </Fluent:Button.Icon>
+                                        <Fluent:Button.LargeIcon>
+                                            <Image Source="Icons/rl.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                        </Fluent:Button.LargeIcon>
+                                    </Fluent:Button>
+                                    <Fluent:Button Height="20" Header="Rotate 180" SizeDefinition="middle">
+                                        <Fluent:Button.Icon>
+                                            <Image Source="Icons/rotate.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </Fluent:Button.Icon>
+                                        <Fluent:Button.LargeIcon>
+                                            <Image Source="Icons/rotate.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                        </Fluent:Button.LargeIcon>
+                                    </Fluent:Button>
+                                    <Fluent:Button Height="20" Header="Flip vertical" SizeDefinition="middle">
+                                        <Fluent:Button.Icon>
+                                            <Image Source="Icons/Actions-object-flip-vertical-icon.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </Fluent:Button.Icon>
+                                        <Fluent:Button.LargeIcon>
+                                            <Image Source="Icons/Actions-object-flip-vertical-icon.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                        </Fluent:Button.LargeIcon>
+                                    </Fluent:Button>
+                                    <Fluent:Button Height="20" Header="Flip horizontal" SizeDefinition="middle">
+                                        <Fluent:Button.Icon>
+                                            <Image Source="Icons/Actions-object-flip-horizontal-icon.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                        </Fluent:Button.Icon>
+                                        <Fluent:Button.LargeIcon>
+                                            <Image Source="Icons/Actions-object-flip-horizontal-icon.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                        </Fluent:Button.LargeIcon>
+                                    </Fluent:Button>
+                                </StackPanel>
+                            </Fluent:DropDownButton>
+                        </StackPanel>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Tools" Width="79">
+                    <StackPanel Orientation="Vertical">
+                        <StackPanel Orientation="Horizontal">
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/pencil.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/pencil.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/color-bucket.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/color-bucket.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/a.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/a.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/eraser.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/eraser.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/color-picker.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/color-picker.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button SizeDefinition="middle" Width="24">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/zoom.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/zoom.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Width="57">
+                    <Fluent:DropDownButton Header="Brushes" >
+                        <Fluent:DropDownButton.Icon>
+                            <Image Source="/Icons/brush.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:DropDownButton.Icon>
+                        <Fluent:DropDownButton.LargeIcon>
+                            <Image Source="/Icons/brush.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:DropDownButton.LargeIcon>
+                        <StackPanel Orientation="Horizontal">
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b0.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b0.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b1.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b1.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b2.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b2.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b3.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b3.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b4.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b4.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b5.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b5.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b6.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b6.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/b7.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/b7.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                        <Fluent:Button Height="20" SizeDefinition="middle">
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/b8.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/b8.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                    </Fluent:DropDownButton>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Shapes" Width="228">
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s0.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s0.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s1.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s1.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s2.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s2.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s3.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s3.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s4.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s4.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s5.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s5.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s6.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s6.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s7.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s8.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s9.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s19.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s10.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s10.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s11.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s11.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s12.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s12.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s13.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s13.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s14.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s14.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s15.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s15.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s15.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s15.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s16.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s16.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s17.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s17.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s18.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s18.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s19.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s19.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                                <Fluent:Button Height="20" SizeDefinition="middle" Width="20" >
+                                    <Fluent:Button.Icon>
+                                        <Image Source="Icons/s20.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                    </Fluent:Button.Icon>
+                                    <Fluent:Button.LargeIcon>
+                                        <Image Source="Icons/s20.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                    </Fluent:Button.LargeIcon>
+                                </Fluent:Button>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical">
+                            <Fluent:Button Height="20" Header="Outline" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/fill.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/fill.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                            <Fluent:Button Height="20" Header="Fill" SizeDefinition="middle">
+                                <Fluent:Button.Icon>
+                                    <Image Source="Icons/outline.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                                </Fluent:Button.Icon>
+                                <Fluent:Button.LargeIcon>
+                                    <Image Source="Icons/outline.png" RenderOptions.BitmapScalingMode="HighQuality" />
+                                </Fluent:Button.LargeIcon>
+                            </Fluent:Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Width="42">
+                    <Fluent:DropDownButton Header="Size" >
+                        <Fluent:DropDownButton.Icon>
+                            <Image Source="/Icons/size.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:DropDownButton.Icon>
+                        <Fluent:DropDownButton.LargeIcon>
+                            <Image Source="/Icons/size.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:DropDownButton.LargeIcon>
+                        <StackPanel Orientation="Vertical">
+                            <Button >
+                                <Image Source="Icons/size0.png" RenderOptions.BitmapScalingMode="HighQuality" Width="200"/>
+                            </Button>
+                            <Button >
+                                <Image Source="Icons/size1.png" RenderOptions.BitmapScalingMode="HighQuality" Width="200"/>
+                            </Button>
+                            <Button >
+                                <Image Source="Icons/size2.png" RenderOptions.BitmapScalingMode="HighQuality" Width="200"/>
+                            </Button>
+                            <Button >
+                                <Image Source="Icons/size3.png" RenderOptions.BitmapScalingMode="HighQuality" Width="200"/>
+                            </Button>
+                        </StackPanel>
+                    </Fluent:DropDownButton>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Colors" Width="300">
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Header="Color 1" >
+                            <Fluent:Button.Icon>
+                                <Rectangle Fill="Black" Stroke="Black"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Rectangle Fill="Black" Stroke="Black"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="Color 2" >
+                            <Fluent:Button.Icon>
+                                <Rectangle Fill="White" Stroke="Black"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Rectangle Fill="White" Stroke="Black"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <StackPanel Orientation="Vertical" Margin="8">
+                            <StackPanel Orientation="Horizontal">
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="Black" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="Gray" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF880015" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFED1C24" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFFF7F27" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFFFF200" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF22B14C" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF00A2E8" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF3F48CC" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFA349A4" Stretch="UniformToFill"/>
+                                </Button>
+                                
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="White" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFC3C3C3" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFB97A57" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFFFAEC9" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFFFC90E" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFEFE4B0" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFB5E61D" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF7092BE" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FF7092BE" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFC8BFE7" Stretch="UniformToFill"/>
+                                </Button>
+
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                                <Button  Width="15" Height="15" Background="White" BorderBrush="Black" Margin="0.5" >
+                                    <Rectangle Fill="#FFF5F6F7" Stretch="UniformToFill"/>
+                                </Button>
+                            </StackPanel>
+                            
+                        </StackPanel>
+                        <Fluent:Button Header="Edit Colors" >
+                            <Fluent:Button.Icon>
+                                <Image Source="/Icons/edit-color.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="/Icons/edit-color.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Width="60" >
+                    <Fluent:Button Header="Edit with Paint 3D" Height="Auto" Margin="0,0,0,-14" >
+                        <Fluent:Button.Icon>
+                            <Image Source="/Icons/edit-3d.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:Button.Icon>
+                        <Fluent:Button.LargeIcon>
+                            <Image Source="/Icons/edit-3d.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                        </Fluent:Button.LargeIcon>
+                    </Fluent:Button>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+            <Fluent:RibbonTabItem Header="View">
+                <Fluent:RibbonGroupBox Header="Zoom">
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Header="Zoom In" >
+                            <Fluent:Button.Icon>
+                                <Image Source="/Icons/zoom-in.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="/Icons/zoom-in.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="Zoom Out" >
+                            <Fluent:Button.Icon>
+                                <Image Source="/Icons/zoom-out.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="/Icons/zoom-out.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="100 %" >
+                            <Fluent:Button.Icon>
+                                <Image Source="/Icons/100%.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="/Icons/100%.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Show or hide">
+                    <StackPanel Orientation="Vertical">
+                        <Fluent:CheckBox Header="Rulers" SizeDefinition="middle" />
+                        <Fluent:CheckBox Header="Gridlines" SizeDefinition="middle" />
+                        <Fluent:CheckBox Header="Status bar" SizeDefinition="middle" />
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+                <Fluent:RibbonGroupBox Header="Display">
+                    <StackPanel Orientation="Horizontal">
+                        <Fluent:Button Header="Full screen" >
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/resize.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/resize.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                        <Fluent:Button Header="Thumbnail" >
+                            <Fluent:Button.Icon>
+                                <Image Source="Icons/thumbnail.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.Icon>
+                            <Fluent:Button.LargeIcon>
+                                <Image Source="Icons/thumbnail.png" RenderOptions.BitmapScalingMode="HighQuality"/>
+                            </Fluent:Button.LargeIcon>
+                        </Fluent:Button>
+                    </StackPanel>
+                </Fluent:RibbonGroupBox>
+            </Fluent:RibbonTabItem>
+        </Fluent:Ribbon>
+    </Grid>
+</Fluent:RibbonWindow>

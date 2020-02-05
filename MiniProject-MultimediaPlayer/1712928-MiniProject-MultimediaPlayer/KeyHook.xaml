@@ -1,0 +1,17 @@
+﻿<Window x:Class="_1712928_MiniProject_MultimediaPlayer.KeyHook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1712928_MiniProject_MultimediaPlayer"
+        mc:Ignorable="d"
+        Title="KeyHook" Height="200" Width="210" ResizeMode="NoResize">
+    <Canvas Background="#FFADCBF0">
+        <Label Content="Keyboard shortcut" Canvas.Left="3" Canvas.Top="10" FontStyle="Italic" FontWeight="Bold" FontSize="20" Foreground="#FF466D7C"/>
+        <TextBlock Text="Ctrl + Shift + E   : Next" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="52" FontSize="14"/>
+        <TextBlock Text="Ctrl + Shift + Q  : Previcious" Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="94" FontSize="14" Width="178"/>
+        <TextBlock Text="Ctrl + Shift + W : Play/Pause " Canvas.Left="10" TextWrapping="Wrap" Canvas.Top="73" FontSize="14"/>
+        <Button Click="Button_Click" Content="OK" Canvas.Left="71" Canvas.Top="127" Width="42"/>
+
+    </Canvas>
+</Window>
